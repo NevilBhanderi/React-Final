@@ -1,0 +1,122 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+background-image: linear-gradient(-225deg, #bef7e6 0%, #fdcdf4 100%);
+
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+    font-family: 'Vibur', cursive;
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    /* background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%); */
+    background-image: linear-gradient(-225deg, #bef7e6 50%, #fdcdf4 50%);
+
+}
+
+.login-box {
+    border-radius: 12px; 
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #1f2937; 
+    font-size: 2rem;
+}
+
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d1d5db; 
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #4f46e5; 
+    outline: none; 
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    /* background-image: linear-gradient(315deg,  #FFE6FA 71.5% , #E3FDF5 28.5%); */
+    /* background-image: linear-gradient(315deg, #bef7e6 71.5%, #fdcdf4 28.5%); */
+    background-image: linear-gradient(315deg, #fdcdf4 71.5%, #bef7e6 28.5%);
+
+    border:1px solid #1f2937;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+
+
+.login-error {
+    color: #e11d48;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.link {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #4338ca; 
+}
+
+@media (max-width: 600px) {
+    .login-box {
+        padding: 1.5rem;
+    }
+
+    .login-box h1 {
+        font-size: 24px; /* Smaller heading on small screens */
+    }
+
+    .login-box button {
+        font-size: 14px; /* Smaller button text */
+    }
+
+    .login-box input {
+        padding: 0.6rem; /* Smaller padding for inputs */
+    }
+}

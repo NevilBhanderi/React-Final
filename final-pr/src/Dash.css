@@ -1,0 +1,142 @@
+/* Dash.css */
+
+/* Main container for the dashboard */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+background-image: linear-gradient(-225deg, #bef7e6 0%, #fdcdf4 100%);
+
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+    font-family: 'Vibur', cursive;
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+}
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #f9fafb; */
+    height: 100vh; /* Full height */
+}
+
+/* Greeting heading styles */
+.dashboard-greeting {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #1f2937; /* Dark gray color */
+}
+
+/* Input field styles */
+.dashboard-container input {
+    width: 100%;
+    max-width: 400px; /* Maximum width of inputs */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.dashboard-container input:focus {
+    border-color: #4f46e5; /* Highlight color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button styles */
+.dashboard-container .add {
+    width: 100%;
+    max-width: 400px; 
+    padding: 12px;
+    /* background-image: linear-gradient( #a8edea , #fed6e3 );   */
+    background-image: linear-gradient( #bef7e6 , #fdcdf4 );
+  
+    border-radius: 6px;
+    font-size: 16px;
+   
+    margin-bottom: 20px;
+}
+
+
+
+/* List styles */
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    width: 100%;
+    max-width: 400px; 
+}
+
+
+li {
+   
+    
+     height: auto;
+     border-radius: 5px;
+     margin: 2% auto;
+     box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+     padding: 2%;
+     /* background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%); */
+     background-image: linear-gradient(-225deg, #bef7e6 50%, #fdcdf4 50%);
+
+ 
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.edit-button {
+    width: 100%;
+    max-width: 400px; 
+    padding: 12px;
+    background: #f59e0b; /* Amber color for edit */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    /* padding: 6px 12px; */
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px; 
+}
+
+
+
+/* Delete button styles */
+.delete-button {
+    width: 100%;
+    max-width: 400px; 
+    padding: 12px;
+    background: #f59e0b; /* Amber color for edit */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px; 
+    background: #ef4444; 
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+    .dashboard-greeting {
+        font-size: 1.5rem;
+    }
+
+    .dashboard-container input, 
+    .dashboard-container button {
+        font-size: 14px; 
+    }
+}
